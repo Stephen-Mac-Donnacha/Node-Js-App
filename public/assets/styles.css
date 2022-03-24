@@ -1,0 +1,51 @@
+body{
+    background: #03285b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+#languageForm{
+    width: 80%;
+    background: #ff0000;
+    padding: 15px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+#instructions{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+input{
+    width: 25px;
+    height: 25px;
+    border: 10px solid;
+    transition: 0.4s all linear;
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
+}
+
+input:checked {
+    border: 6px solid black;
+}
+
+button{
+    text-align: center;
+    padding: 20px;
+    width: 40%;
+    background: #236cc2;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+
+h1{
+    position: relative;
+    font-size: 50px;
+}

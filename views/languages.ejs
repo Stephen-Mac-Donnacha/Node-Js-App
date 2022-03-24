@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <!--Display the title of the webpage here, link scripts and stylesheets under-->
+        <title>Vote for your favourite programming language</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="/assets/languageList.js"></script>
+        <link href="/assets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Vote here for your favourite programming language</h1>
+        <p id = "instructions"> 
+            To vote for a language click the button next to it's name, then click the submit button<br>
+            (Please note you cannot vote for more than one language at a time)
+        </p>
+        <form id = "languageForm">
+            <!--Loop over values in the database, displaying each as a radio button, used to vote-->
+            <% for (var i=0; i < languages.length; i++) { %>
+            <input type="radio" name="language" value="<%=languages[i].Name%>"><%=languages[i].Name%> :
+            <div id = "votes"> Total Votes:  <%=languages[i].Votes%><br></div>
+                <% } %>
+            <!--div to hold the total count of votes-->
+            <div id = "res"></div>
+            <button type ="submit">Submit Vote</button>
+        </form>
+    </body>
+</html>
