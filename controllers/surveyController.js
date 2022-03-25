@@ -7,7 +7,7 @@ mongoose.set('useUnifiedTopology', true);
 mongoose.set('useFindAndModify', false);
 
 // Pass in the mongoose connection string for database access
-mongoose.connect('mongodb+srv://smacdonnacha:0nGXaR1uWvZ5hYIy@cluster0.lqgiz.mongodb.net/languages?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://smacdonnacha:passwd@cluster0.lqgiz.mongodb.net/languages?retryWrites=true&w=majority');
 
 // Create schema, includes Name & Votes
 var languageSchema = new mongoose.Schema({
